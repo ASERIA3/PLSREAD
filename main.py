@@ -85,7 +85,7 @@ if __name__ == "__main__":
 	# grid method is used for placing
 	# the widgets at respective positions
 	# in table like structure .
-	expression_field.grid(columnspan=4, ipadx=70)
+	expression_field.grid(columnspan=4, ipadx=80)
 
 	# create a Buttons and place at a particular
 	# location inside the root window .
