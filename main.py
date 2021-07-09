@@ -47,7 +47,7 @@ if __name__ == "__main__":
 	# StringVar() is the variable class then we create an instance of this class.
 	equation = StringVar()
 
-	# create the text entry box for showing the expression .
+	# create the text entry box for showing the expression.
 	expression_field = Entry(gui, textvariable=equation)
 
 	# grid method is used for placing the widgets at respective position in table like structure.
