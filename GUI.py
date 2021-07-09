@@ -1,6 +1,7 @@
 from test import equalpress
 from tkinter import *
-
+#ORIGINAL
+#NO PLAY
 def press(num):
 	# point out the global expression variable
 	global expression
