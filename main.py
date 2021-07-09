@@ -158,5 +158,27 @@ if __name__ == "__main__":
 	Decimal= Button(gui, text='.', fg='black', bg='white',
 					command=lambda: press('.'), height=1, width=7)
 	Decimal.grid(row=6, column=0)
-	# start the GUI
-	gui.mainloop()
+
+	Reminder= Button(gui, text='WARNING', fg='black', bg='white',
+					command=lambda: press('THIS IS NOT A SCIENTIFIC CALCULATOR'), height=1, width=7)
+	Reminder.grid(row=6, column=1)
+
+	#HEHEHE
+	Present= Button(gui, text='GIFT', fg='red', bg='black',
+					command=lambda: press('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height=1, width=7)
+	Present.grid(row=6, column=2)
+
+	import tkinter as just_a_joke
+import webbrowser
+
+def callback(event):
+    webbrowser.open_new(event.widget.cget("text"))
+
+root = just_a_joke.Tk()
+lbl = just_a_joke.Label(root, text=r"https://www.youtube.com/watch?v=yPYZpwSpKmA", fg="blue", cursor="hand2")
+lbl.pack()
+lbl.bind("<Button-1>", callback)
+root.mainloop()
+	
+# start the GUI
+gui.mainloop()
